@@ -21,9 +21,9 @@ function SendMessages() {
 
     return (
         <div>
-            <form onSubmit={SendMessage}>
-                <input value={msg} onChange={(e) => setMsg(e.target.value)} autoFocus placeholder="Text Message..." />
-                <button type='submit'>Send</button>
+            <form onSubmit={SendMessage} className="space-x-2">
+                <input value={msg} onChange={(e) => setMsg(e.target.value)} autoFocus placeholder="Text Message..." className="text-black mt-10 rounded-full p-3 outline-none w-screen" />
+                <button type='submit' className="btn btn-primary">Send</button>
             </form>
         </div>
     )
