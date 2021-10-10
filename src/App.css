@@ -1,0 +1,52 @@
+.signOut {
+    position: fixed;
+    top: 0;
+    border: 1px solid none;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    @apply p-2 w-full px-4 shadow-xl bg-gray-100
+}
+
+.msg {
+    display: flex;
+    padding: 20px 10px 0 20px;
+    margin: 5px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.sent {
+    color: white;
+    flex-direction: row-reverse;
+    padding: 10px;
+    float: right;
+    @apply space-x-4 px-5 space-x-reverse bg-indigo-600
+}
+
+.received {
+    border: 1px solid lightgray;
+    float: left;
+    color: black;
+    padding: 10px;
+    @apply space-x-4 px-5 bg-gray-100
+}
+
+.sendMsg {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    padding: 5px;
+    background-color: white;
+}
+
+.msgs {
+    margin: 65px 0;
+    display: flex;
+    flex-direction: column;
+    @apply sm:mx-20 xl:mx-60
+  }
